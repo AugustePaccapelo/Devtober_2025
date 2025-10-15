@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using Microsoft.Win32.SafeHandles;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,9 +12,12 @@ public class PlayerInputs : MonoBehaviour
 
     // ----- Objects ----- \\
 
-    [SerializeField] public Rigidbody2D rigidBody { get; private set; }
+    public Rigidbody2D rigidBody { get; private set; }
+    private SpriteRenderer _renderer;
 
     // ----- Others ----- \\
+
+    public bool isCrouch { get; private set; } = false;
 
     [SerializeField] private PlayerControlType _playerControlType;
     [SerializeField] private Dictionary<InputAxis, bool> _ignoreAxis = new Dictionary<InputAxis, bool>()
@@ -34,6 +35,9 @@ public class PlayerInputs : MonoBehaviour
 
     private Vector2 _currentInputDirection;
 
+    private Color _normalColor;
+    [SerializeField] private Color _crouchColor = Color.green;
+
     // ---------- FUNCTIONS ---------- \\
 
     // ----- Awake & Start & Update ----- \\
@@ -43,6 +47,8 @@ public class PlayerInputs : MonoBehaviour
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        _renderer = GetComponentInChildren<SpriteRenderer>();
+        _normalColor = _renderer.color;
 
         switch (_playerControlType)
         {
@@ -131,9 +137,11 @@ public class PlayerInputs : MonoBehaviour
         _currentInputDirection = inputValue.Get<Vector2>();
     }
 
-    private void OnCrouch()
+    private void OnCrouch(InputValue inputValue)
     {
         if (!_canCrouch) return;
+        isCrouch = inputValue.Get<float>() > 0f ? true : false;
+        _renderer.color = isCrouch ? _crouchColor : _normalColor;
     }
 
     private void OnJump()

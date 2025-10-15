@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Player.cs" />
+    <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

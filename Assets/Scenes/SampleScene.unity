@@ -555,6 +555,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7768391965892994822, guid: 5fbffb674cca23b4fbdbfe1d037b920b, type: 3}
+      propertyPath: _acceleration
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768391965892994822, guid: 5fbffb674cca23b4fbdbfe1d037b920b, type: 3}
       propertyPath: _maxInputSpeed
       value: 5
       objectReference: {fileID: 0}

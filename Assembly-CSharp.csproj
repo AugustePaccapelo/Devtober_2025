@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
+    <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
   </ItemGroup>
   <ItemGroup>

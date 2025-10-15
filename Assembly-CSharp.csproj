@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
+    <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />
+    <Compile Include="Assets\Scripts\Week1\Crown_Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

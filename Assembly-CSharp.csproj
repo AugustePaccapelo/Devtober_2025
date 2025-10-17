@@ -66,12 +66,15 @@
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Leg.cs" />
+    <Compile Include="Assets\Scripts\Week2\Sweep_UITarget.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week2\Spear_Spear.cs" />
+    <Compile Include="Assets\Scripts\Week2\Sweep_GameTarget.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Starfish.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_Wall.cs" />
+    <Compile Include="Assets\Scripts\Week2\Sweep_RadarManager.cs" />
     <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />
   </ItemGroup>

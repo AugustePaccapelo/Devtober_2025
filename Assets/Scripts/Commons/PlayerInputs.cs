@@ -20,13 +20,12 @@ public class PlayerInputs : MonoBehaviour
     public bool isCrouch { get; private set; } = false;
 
     [SerializeField] private PlayerControlType _playerControlType;
-    [SerializeField] private Dictionary<InputAxis, bool> _ignoreAxis = new Dictionary<InputAxis, bool>()
-    {
-        {InputAxis.PosX, false }, {InputAxis.NegX, false}, {InputAxis.PosY, false }, {InputAxis.NegY, false}
-    };
+
+    [SerializeField]
+    private List<InputAxis> _ignoreAxisList = new List<InputAxis>();
 
     private bool _canJump = false;
-    private bool _canCrouch = false;
+    [SerializeField] private bool _canCrouch = true;
     private bool _takeYInput = false;
 
     [SerializeField] private float _acceleration = 5f;
@@ -48,7 +47,7 @@ public class PlayerInputs : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         _renderer = GetComponentInChildren<SpriteRenderer>();
-        _normalColor = _renderer.color;
+        if (_renderer != null) _normalColor = _renderer.color;
 
         switch (_playerControlType)
         {
@@ -83,8 +82,45 @@ public class PlayerInputs : MonoBehaviour
 
     private void MovePlayerPlan2D()
     {
-        Vector2 inputVelo = GetInputDirection() * _maxInputSpeed;
-        rigidBody.linearVelocity = inputVelo;
+        Vector2 InputVelocity = GetInputDirection() * _maxInputSpeed;
+
+        Handle2DXMove(InputVelocity.x);
+
+        Handle2DYMove(InputVelocity.y);
+    }
+
+    private void Handle2DXMove(float xVelo)
+    {
+        bool ignorePosX = _ignoreAxisList.Contains(InputAxis.PositiveX);
+        bool ignoreNegX = _ignoreAxisList.Contains(InputAxis.NegativeX);
+        if (ignorePosX && ignoreNegX) return;
+
+        if (!ignorePosX && rigidBody.linearVelocityX >= _maxInputSpeed && xVelo > 0)
+        {
+            rigidBody.linearVelocityX = 0f;
+        }
+        else if (!ignoreNegX && rigidBody.linearVelocityX <= -_maxInputSpeed && xVelo < 0)
+        {
+            rigidBody.linearVelocityX = 0f;
+        }
+        else rigidBody.linearVelocityX = xVelo;
+    }
+
+    private void Handle2DYMove(float yVelo)
+    {
+        bool ignorePosY = _ignoreAxisList.Contains(InputAxis.PositiveY);
+        bool ignoreNegY = _ignoreAxisList.Contains(InputAxis.NegativeY);
+        if (ignorePosY && ignoreNegY) return;
+
+        if (!ignorePosY && rigidBody.linearVelocityY >= _maxInputSpeed && yVelo > 0)
+        {
+            rigidBody.linearVelocityY = 0f;
+        }
+        else if (!ignoreNegY && rigidBody.linearVelocityY <= -_maxInputSpeed && yVelo < 0)
+        {
+            rigidBody.linearVelocityY = 0f;
+        }
+        else rigidBody.linearVelocityY = yVelo;
     }
 
     private void MovePlayerPhysics()
@@ -106,12 +142,12 @@ public class PlayerInputs : MonoBehaviour
         if (!_takeYInput) currentDirec.y = 0;
         else
         {
-            if (_ignoreAxis[InputAxis.PosY] && currentDirec.y > 0) currentDirec.y = 0;
-            if (_ignoreAxis[InputAxis.NegY] && currentDirec.y < 0) currentDirec.y = 0;
+            if (_ignoreAxisList.Contains(InputAxis.PositiveY) && currentDirec.y > 0) currentDirec.y = 0;
+            if (_ignoreAxisList.Contains(InputAxis.NegativeY) && currentDirec.y < 0) currentDirec.y = 0;
         }
 
-        if (_ignoreAxis[InputAxis.PosX] && currentDirec.x > 0) currentDirec.x = 0;
-        if (_ignoreAxis[InputAxis.NegX] && currentDirec.x < 0) currentDirec.x = 0;
+        if (_ignoreAxisList.Contains(InputAxis.PositiveX) && currentDirec.x > 0) currentDirec.x = 0;
+        if (_ignoreAxisList.Contains(InputAxis.NegativeX) && currentDirec.x < 0) currentDirec.x = 0;
 
         return currentDirec;
     }
@@ -119,7 +155,6 @@ public class PlayerInputs : MonoBehaviour
     private void SetControlTypePhysic()
     {
         _canJump = true;
-        _canCrouch = true;
         _takeYInput = false;
         rigidBody.gravityScale = 1f;
     }
@@ -127,14 +162,13 @@ public class PlayerInputs : MonoBehaviour
     private void SetControlTypePlan2D()
     {
         _canJump = false;
-        _canCrouch = true;
         _takeYInput = true;
         rigidBody.gravityScale = 0f;
     }
 
     private void OnMove(InputValue inputValue)
     {
-        _currentInputDirection = inputValue.Get<Vector2>();
+        _currentInputDirection = inputValue.Get<Vector2>().normalized;
     }
 
     private void OnCrouch(InputValue inputValue)

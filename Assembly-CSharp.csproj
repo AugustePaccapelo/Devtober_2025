@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Logiciels\Programmations\Unity\Editor\6000.0.59f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Week2\Reckless_Player.cs" />
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
@@ -70,7 +71,9 @@
     <Compile Include="Assets\Scripts\Week2\Starfish_Starfish.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Player.cs" />
+    <Compile Include="Assets\Scripts\Week2\Reckless_Wall.cs" />
     <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
+    <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

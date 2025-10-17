@@ -6,8 +6,8 @@ public enum PlayerControlType
 
 public enum InputAxis
 {
-    PosX,
-    NegX,
-    PosY,
-    NegY
+    PositiveX,
+    NegativeX,
+    PositiveY,
+    NegativeY
 }

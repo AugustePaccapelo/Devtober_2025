@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_Wall.cs" />
+    <Compile Include="Assets\Scripts\Week1\Weave_Ball.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_RadarManager.cs" />
     <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />

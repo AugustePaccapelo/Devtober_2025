@@ -15,7 +15,6 @@ public class Weave_Ball : MonoBehaviour
 
     // ----- Others ----- \\
 
-    [SerializeField] private float _turnsPerUnits = 2f;
     [SerializeField] private float _downScaleRatio = 1f;
     [SerializeField] private float _rotationSpeed = 10f;
 

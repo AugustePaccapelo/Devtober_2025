@@ -10,11 +10,12 @@ TagManager:
   - Wall
   - Spear
   - Paper
+  - Head
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Head
   - Water
   - UI
   - Player

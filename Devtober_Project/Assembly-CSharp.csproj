@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{29590AA9-C17D-B244-4B6F-FBD47E0A3952}</ProjectGuid>
+    <ProjectGuid>{E041C483-818F-0D2B-D046-FE569F898ECF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,11 +64,13 @@
     <Compile Include="Assets\Scripts\Week2\Reckless_Player.cs" />
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
+    <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Leg.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_UITarget.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week2\Spear_Spear.cs" />
+    <Compile Include="Assets\Scripts\Week2\Shredded_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_GameTarget.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Starfish.cs" />
     <Compile Include="Assets\Scripts\Week1\Crown_Crown.cs" />

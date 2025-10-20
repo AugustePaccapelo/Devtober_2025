@@ -1,3 +1,6 @@
+#if UNITY_EDITOR
+// In editor the script will compile
+// When building the project, this script will be ignored
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,7 +13,7 @@ public class ScriptTemplatesLoaderTool : EditorWindow
 {
     // Templates
     // Path of your templates
-    private const string TEMPLATES_FOLDER_PATH = "C:\\Documents\\Programmation\\Templates\\Unity";
+    private const string TEMPLATES_FOLDER_PATH = "C:\\Documents\\Programmation\\Templates\\Unity\\Scripts";
     // Template availables Macros
     private const string KEYWORD_REPLACEMENT_SCRIPTNAME = "#SCRIPTNAME#";
     private const string KEYWORD_REPLACEMENT_PROJECTNAME = "#PROJECTNAME#";
@@ -79,6 +82,7 @@ public class ScriptTemplatesLoaderTool : EditorWindow
             if (GUILayout.Toggle(currentTemplateChoose == templateName, templateName, TEMPLATES_BUTTON_TYPE))
             {
                 currentTemplateChoose = templateName;
+                if (currentScriptName == DEFAULT_SCRIPT_NAME || allTemplatesNames.Contains(currentScriptName)) currentScriptName = templateName;
             }
         }
     }
@@ -170,3 +174,4 @@ public class ScriptTemplatesLoaderTool : EditorWindow
         return templatesNames;
     }
 }
+#endif

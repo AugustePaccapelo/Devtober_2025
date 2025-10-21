@@ -12,6 +12,7 @@ public class PlayerInputs : MonoBehaviour
 
     // ----- Objects ----- \\
 
+    [SerializeField] private GameObject _footObj;
     public Rigidbody2D rigidBody { get; private set; }
     private SpriteRenderer _renderer;
 
@@ -24,7 +25,7 @@ public class PlayerInputs : MonoBehaviour
     [SerializeField]
     private List<InputAxis> _ignoreAxisList = new List<InputAxis>();
 
-    private bool _canJump = false;
+    [SerializeField] private bool _canJump = false;
     [SerializeField] private bool _canCrouch = true;
     private bool _takeYInput = false;
 
@@ -36,6 +37,7 @@ public class PlayerInputs : MonoBehaviour
 
     private Color _normalColor;
     [SerializeField] private Color _crouchColor = Color.green;
+    [SerializeField] private LayerMask _groundLayer = 13;
 
     // ---------- FUNCTIONS ---------- \\
 
@@ -154,7 +156,6 @@ public class PlayerInputs : MonoBehaviour
 
     private void SetControlTypePhysic()
     {
-        _canJump = true;
         _takeYInput = false;
         rigidBody.gravityScale = 1f;
     }
@@ -180,7 +181,17 @@ public class PlayerInputs : MonoBehaviour
 
     private void OnJump()
     {
-        if (!_canJump) return;
+        if (!_canJump || !IsGrounded()) return;
+
+        rigidBody.linearVelocityY += _jumpForce;
+    }
+
+    private bool IsGrounded()
+    {
+        Vector2 boxSize = new Vector2(_renderer.size.x - 0.1f, 0.05f);
+        RaycastHit2D hit = Physics2D.BoxCast(_footObj.transform.position, boxSize, 0f, Vector2.down, 0.05f, _groundLayer);
+
+        return hit;
     }
 
     // ----- Destructor ----- \\

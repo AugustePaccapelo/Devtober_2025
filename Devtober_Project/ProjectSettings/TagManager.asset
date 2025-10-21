@@ -12,6 +12,7 @@ TagManager:
   - Paper
   - Head
   - Ground
+  - Trunk
   layers:
   - Default
   - TransparentFX

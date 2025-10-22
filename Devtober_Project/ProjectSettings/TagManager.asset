@@ -13,6 +13,7 @@ TagManager:
   - Head
   - Ground
   - Trunk
+  - Target
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ public class LookAtMouse : MonoBehaviour
 
     public bool shouldLook = true;
     public float currentAngle { get { return transform.eulerAngles.z - _offSetAngle; } }
-    public Vector3 currentDirection { get; private set; } = Vector3.right;
+    public Vector2 currentDirection { get; private set; } = Vector3.right;
 
     [SerializeField] private float _offSetAngle;
 
@@ -40,9 +40,9 @@ public class LookAtMouse : MonoBehaviour
 
     private Vector3 DirectionToMouse()
     {
-        Vector3 mousePos = Mouse.current.position.value;
+        Vector2 mousePos = Mouse.current.position.value;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        Vector3 direction = (mousePos - transform.position).normalized;
+        Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
         return direction;
     }
 

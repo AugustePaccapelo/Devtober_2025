@@ -63,6 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Week2\Reckless_Player.cs" />
     <Compile Include="Assets\Scripts\Week3\TrunkGenerator.cs" />
+    <Compile Include="Assets\Scripts\Week4\Blast_Player.cs" />
+    <Compile Include="Assets\Scripts\Week4\Blast_Rocket.cs" />
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />

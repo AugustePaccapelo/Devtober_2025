@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />
+    <Compile Include="Assets\Scripts\Week4\Button_Manager.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Week3\Ornate_Stone.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Leg.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\Week3\Deal_CoinsManager.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_BeeGenerator.cs" />
     <Compile Include="Assets\Scripts\Week1\Weave_Ball.cs" />
+    <Compile Include="Assets\Scripts\Week4\Rivals_GameManager.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_RadarManager.cs" />
     <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />

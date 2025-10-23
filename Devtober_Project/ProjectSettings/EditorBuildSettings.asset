@@ -6,8 +6,77 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/MainMenu.unity
+    guid: 547fe759b33d3d7468184f0375473627
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day1.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day2.unity
+    guid: 33a0da518c4c943458887a13f6dca1e0
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day3.unity
+    guid: f1f929b04923d9d4aa6b2ba8249febcb
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day4.unity
+    guid: 60fcbd1c149600744b256b769d9f9fc3
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day5.unity
+    guid: b98f0b96415668748a768c71020b38e0
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day6.unity
+    guid: 66a6ca3e08d414b45ba1c8416feff18f
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day7.unity
+    guid: dbe8ec9d97d9d6a449b0ea5e5cfb37de
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day8.unity
+    guid: 41faf673e8b49334db8319bf85449b36
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day9.unity
+    guid: c40d010fd7b6f1549a8fd675f6681519
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day10.unity
+    guid: 41e05271f53bf7041a41edb2c7a9f6d9
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day11.unity
+    guid: f0548e89191569a4089f9d017618e615
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day12.unity
+    guid: a7e2362671b22b14f8e0a7d4f832a4b7
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day13.unity
+    guid: 44cddfa61dcd4654e9fedcc96029535e
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day14.unity
+    guid: 53c5ce8778e4fb940988c4894dc4f1ec
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day15.unity
+    guid: 4173698ff22da404ca4e2b7bb78af0e9
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day16.unity
+    guid: b9e86995431f9db47a7fd3957ba79131
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day17.unity
+    guid: 3c46acffe20dbb4488b5a90015ce2e0c
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day18.unity
+    guid: fbd2634bf0293984d908e18322c7a10d
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day19.unity
+    guid: 47169a02a38b06e4da7a7bb9524314b8
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day20.unity
+    guid: 4c1ffc6998a85964a8bc827514b9b9fb
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day21.unity
+    guid: d92f29e6e0b0d9a43a7526f07619c44f
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day22.unity
+    guid: 8ff26e71131ff414bbe52b7c6eb07b67
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day23.unity
+    guid: e0f286bb3404f074f99d3e33f0d60469
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -9,8 +9,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{E041C483-818F-0D2B-D046-FE569F898ECF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -75,6 +74,7 @@
     <Compile Include="Assets\Scripts\Week3\Ornate_Stone.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Leg.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_UITarget.cs" />
+    <Compile Include="Assets\Scripts\Commons\CanvasButtonReturn.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Spear_Spear.cs" />

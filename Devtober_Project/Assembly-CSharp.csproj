@@ -9,7 +9,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{E041C483-818F-0D2B-D046-FE569F898ECF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -63,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Week2\Reckless_Player.cs" />
     <Compile Include="Assets\Scripts\Week3\TrunkGenerator.cs" />
+    <Compile Include="Assets\Scripts\Week4\Firefly_AI.cs" />
     <Compile Include="Assets\Scripts\Week4\Blast_Player.cs" />
     <Compile Include="Assets\Scripts\Week4\Blast_Rocket.cs" />
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />

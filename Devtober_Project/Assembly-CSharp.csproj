@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />
     <Compile Include="Assets\Scripts\Week4\Button_Manager.cs" />
+    <Compile Include="Assets\Scripts\Week4\Onion_Player.cs" />
     <Compile Include="Assets\Scripts\Commons\LookAtMouse.cs" />
     <Compile Include="Assets\Scripts\Week3\Ornate_Stone.cs" />
     <Compile Include="Assets\Scripts\Week2\Starfish_Leg.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Week3\Deal_Object.cs" />
     <Compile Include="Assets\Scripts\Week2\Heavy_Platform.cs" />
     <Compile Include="Assets\Scripts\Week3\Deal_CoinsManager.cs" />
+    <Compile Include="Assets\Scripts\Week4\Puzzling_Manager.cs" />
     <Compile Include="Assets\Scripts\Week4\Rowdy_Ball.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_BeeGenerator.cs" />
     <Compile Include="Assets\Scripts\Week1\Weave_Ball.cs" />

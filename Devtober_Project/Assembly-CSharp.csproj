@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Commons\CanvasButtonReturn.cs" />
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_Player.cs" />
+    <Compile Include="Assets\Scripts\Week4\Puzzling_Wall.cs" />
     <Compile Include="Assets\Scripts\Week2\Spear_Spear.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_GameTarget.cs" />

@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\Week3\Deal_Object.cs" />
     <Compile Include="Assets\Scripts\Week2\Heavy_Platform.cs" />
     <Compile Include="Assets\Scripts\Week3\Deal_CoinsManager.cs" />
+    <Compile Include="Assets\Scripts\Week4\Rowdy_Ball.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_BeeGenerator.cs" />
     <Compile Include="Assets\Scripts\Week1\Weave_Ball.cs" />
     <Compile Include="Assets\Scripts\Week4\Rivals_GameManager.cs" />

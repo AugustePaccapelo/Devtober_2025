@@ -80,6 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Themes/Day24.unity
     guid: bcc81bd3b66fe3c45a26cc1123bb26d3
+  - enabled: 1
+    path: Assets/Scenes/Themes/Day25.unity
+    guid: 68d692ffb9feb6d4ba67e8a2a8cf3c30
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

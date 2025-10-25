@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Week4\Blast_Rocket.cs" />
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
+    <Compile Include="Assets\Scripts\Week5\Lesson_Manager.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />
     <Compile Include="Assets\Scripts\Week4\Button_Manager.cs" />
     <Compile Include="Assets\Scripts\Week4\Onion_Player.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\Commons\Enums.cs" />
     <Compile Include="Assets\Scripts\Week2\Sting_Player.cs" />
     <Compile Include="Assets\Scripts\Week4\Puzzling_Wall.cs" />
+    <Compile Include="Assets\Scripts\Week5\Lesson_Button.cs" />
     <Compile Include="Assets\Scripts\Week2\Spear_Spear.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_Player.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_GameTarget.cs" />

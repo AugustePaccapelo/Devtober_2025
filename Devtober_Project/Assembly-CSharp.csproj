@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Commons\PlayerInputs.cs" />
     <Compile Include="Assets\Scripts\Tools\ScriptTemplatesLoaderTool.cs" />
     <Compile Include="Assets\Scripts\Week5\Lesson_Manager.cs" />
+    <Compile Include="Assets\Scripts\Week5\Vacant_AI.cs" />
     <Compile Include="Assets\Scripts\Week2\Shredded_PaperGenerator.cs" />
     <Compile Include="Assets\Scripts\Week4\Button_Manager.cs" />
     <Compile Include="Assets\Scripts\Week4\Onion_Player.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\Week4\Rivals_GameManager.cs" />
     <Compile Include="Assets\Scripts\Week2\Sweep_RadarManager.cs" />
     <Compile Include="Assets\Scripts\Week1\Deer_Deer.cs" />
+    <Compile Include="Assets\Scripts\Week5\Vacant_Spawer.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />
     <Compile Include="Assets\Scripts\Week3\Deal_ObjectsTypes.cs" />
   </ItemGroup>

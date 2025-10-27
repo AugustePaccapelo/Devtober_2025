@@ -34,6 +34,7 @@ public class PlayerInputs : MonoBehaviour
     [SerializeField] private float _jumpForce = 1000f;
 
     private Vector2 _currentInputDirection;
+    public Vector2 CurrentInputDirection => _currentInputDirection;
 
     private Color _normalColor;
     [SerializeField] private Color _crouchColor = Color.green;

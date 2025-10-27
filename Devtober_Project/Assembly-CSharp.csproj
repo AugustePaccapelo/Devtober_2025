@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\Week5\Vacant_Spawer.cs" />
     <Compile Include="Assets\Scripts\Week2\Reckless_WallGenerator.cs" />
     <Compile Include="Assets\Scripts\Week3\Deal_ObjectsTypes.cs" />
+    <Compile Include="Assets\Scripts\Week5\Award_Trophy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 // Author : Auguste Paccapelo
 
@@ -15,6 +13,7 @@ public class Starfish_Starfish : MonoBehaviour
     // ----- Objects ----- \\
 
     [SerializeField] private Starfish_Leg[] _legs;
+    [SerializeField] private Transform _legsContainer;
     private Vector2[] _positions;
     private Vector3[] _rotations;
 
@@ -26,8 +25,19 @@ public class Starfish_Starfish : MonoBehaviour
 
     private void Awake() { }
 
-    private void Start()
+    private void OnEnable()
     {
+        Starfish_Leg.OnAllReady += Init;
+    }
+
+    private void OnDisable()
+    {
+        Starfish_Leg.OnAllReady -= Init;
+    }
+
+    private void Init()
+    {
+        Debug.Log("man");
         int length = _legs.Length;
         _positions = new Vector2[length];
         _rotations = new Vector3[length];
@@ -38,12 +48,17 @@ public class Starfish_Starfish : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
         int length = _legs.Length;
         for (int i = 0; i < length; i++)
         {
-            if (_legs[i].IsDestroyed())
+            if (_legs[i].isClicked)
             {
                 CreateNewLeg(i);
             }
@@ -54,7 +69,7 @@ public class Starfish_Starfish : MonoBehaviour
 
     private void CreateNewLeg(int index)
     {
-        _legs[index] = Instantiate(_legPrefab);
+        _legs[index] = Instantiate(_legPrefab, _legsContainer);
         _legs[index].transform.position = _positions[index];
         _legs[index].transform.eulerAngles = _rotations[index];
     }

@@ -1,4 +1,4 @@
-using TreeEditor;
+using System;
 using UnityEngine;
 
 // Author : Auguste Paccapelo
@@ -25,6 +25,10 @@ public class Starfish_Leg : MonoBehaviour
     private float _currentScaleFactor = 0f;
 
     private bool _isGrowing = true;
+    public bool isClicked { get; private set; } = false;
+    public static event Action OnAllReady;
+    private static int _numLegs = 5;
+    private static int _numReadyLegs = 0;
 
     // ---------- FUNCTIONS ---------- \\
 
@@ -34,11 +38,14 @@ public class Starfish_Leg : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("leg");
         _endPos = transform.position;
         _startPos = _customPivotPoint.transform.position;
         _endScale = transform.localScale;
         transform.localScale = _startScale;
         transform.position = _startPos;
+        _numReadyLegs++;
+        if (_numReadyLegs == _numLegs) OnAllReady?.Invoke();
     }
 
     private void Update()
@@ -63,6 +70,7 @@ public class Starfish_Leg : MonoBehaviour
     private void OnMouseDown()
     {
         Destructor();
+        isClicked = true;
     }
 
     // ----- Destructor ----- \\

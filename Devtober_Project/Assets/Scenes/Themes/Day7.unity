@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish
       objectReference: {fileID: 0}
+    - target: {fileID: 3857249331504112723, guid: 774b8da20238847458c38adb1d882751, type: 3}
+      propertyPath: _legsContainer
+      value: 
+      objectReference: {fileID: 1982070788}
     - target: {fileID: 8861292563675542154, guid: 774b8da20238847458c38adb1d882751, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -268,6 +272,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 774b8da20238847458c38adb1d882751, type: 3}
+--- !u!4 &1982070788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6048107749637958437, guid: 774b8da20238847458c38adb1d882751, type: 3}
+  m_PrefabInstance: {fileID: 1435744132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
